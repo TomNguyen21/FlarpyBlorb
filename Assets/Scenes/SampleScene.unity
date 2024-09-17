@@ -439,6 +439,7 @@ GameObject:
   - component: {fileID: 730235615}
   - component: {fileID: 730235619}
   - component: {fileID: 730235618}
+  - component: {fileID: 730235620}
   m_Layer: 3
   m_Name: Bird
   m_TagString: Untagged
@@ -558,6 +559,8 @@ MonoBehaviour:
   flapStrength: 7
   logic: {fileID: 0}
   birdIsAlive: 1
+  downWing: {fileID: 2109812106}
+  upWing: {fileID: 821670973}
 --- !u!58 &730235619
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -593,6 +596,27 @@ CircleCollider2D:
   m_Offset: {x: -0.1, y: -0.4}
   serializedVersion: 2
   m_Radius: 2.3
+--- !u!95 &730235620
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730235614}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 686c9af82e316be4aaf3d94e9e9192cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &821670973
 GameObject:
   m_ObjectHideFlags: 0
