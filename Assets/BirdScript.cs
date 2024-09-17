@@ -9,8 +9,6 @@ public class BirdScript : MonoBehaviour
     public float flapStrength;
     public LogicScript logic;
     public bool birdIsAlive = true;
-    public GameObject downWing;
-    public GameObject upWing;
 
     // Start is called before the first frame update
     void Start()
@@ -24,14 +22,7 @@ public class BirdScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) == true && birdIsAlive)
         {
 
-            myRigidBody.velocity = Vector2.up * flapStrength; 
-            downWing.SetActive(true);
-            upWing.SetActive(false);
-        }
-        else
-        {
-            downWing.SetActive(false);
-            upWing.SetActive(true);
+            myRigidBody.velocity = Vector2.up * flapStrength;
         }
 
 
